@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'" />
+  <title>Browser</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="chrome">
+    <div id="tabstrip">
+      <div id="tabs"></div>
+      <button id="new-tab" title="New tab (Ctrl+T)">+</button>
+    </div>
+    <div id="toolbar">
+      <button id="back" title="Back (Alt+Left)" disabled>&#8592;</button>
+      <button id="forward" title="Forward (Alt+Right)" disabled>&#8594;</button>
+      <button id="reload" title="Reload (Ctrl+R)">&#8635;</button>
+      <button id="home" title="Home">&#8962;</button>
+      <form id="address-form" autocomplete="off">
+        <input id="address" type="text" placeholder="Search or enter address" spellcheck="false" />
+      </form>
+    </div>
+  </div>
+  <div id="views"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>
