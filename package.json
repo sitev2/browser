@@ -1,0 +1,13 @@
+{
+  "name": "browser",
+  "version": "0.1.0",
+  "description": "A small Chrome-style web browser built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}
